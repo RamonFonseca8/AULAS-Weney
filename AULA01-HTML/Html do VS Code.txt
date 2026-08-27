@@ -1,0 +1,23 @@
+<html lang="PT-BR">
+
+    <head>
+        <meta charset="UTF-8"
+    </head>
+    
+    <body>
+        <p>Olá, Mundo!</p>
+        <h1>Cabeçalho tamanho H1</h1>
+        <h2>Cabeçalho tamanho H2</h2>
+        <h3>Cabeçalho tamanho H3</h3>
+        <h4>Cabeçalho tamanho H4</h4>
+        <h5>Cabeçalho tamanho H5</h5>
+        <h6>Cabeçalho tamanho H6</h6>
+        <hr>
+        <!-- Essas tags H7 e H8 não funcionam -->
+
+        <h7>Cabeçalho tamanho H7</h7><br> <!--br = é broken line "quebra de linha "-->
+        <h8>Cabeçalho tamanho H8</h8>
+    </body>
+
+
+</html>

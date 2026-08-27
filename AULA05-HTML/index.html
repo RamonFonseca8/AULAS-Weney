@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Formulários</title>
+</head>
+<style>
+    div {
+        margin-left: 140px;
+        margin-right: 140px;
+        background-color: #999999;
+        border-radius: 10px;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <h1>FORMUlÁRIO EM HTML</h1>
+        <form action="#" method="POST">
+            <label>Nome: </label><br>
+            <input type="text" size="80"><br>
+            <label>Idade: </label><br>
+            <input type="number" min="0" max="100"><br>
+            <label>E mail: </label><br>
+            <input type="email" placeholder="@"><br>
+            <label>Senha: </label><br>
+            <input type="password"><br>
+            <label>Data: </label><br>
+            <input type="date"><br>
+            <label>Telefone: </label><br>
+            <input type="tel" placeholder="(00)0000-0000"><br>
+            <label>Site: </label><br>
+            <input type="url" placeholder="https://"><br>
+            <hr>
+            <input type="radio" name="ec" value="Casado">
+            Casado<br>
+            <input type="radio" name="ec" value="Solteiro">
+            Solteiro<br>
+            <input type="radio" name="ec" value="Piranho">
+            Piranho<br>
+            <input type="radio" name="ec" value="Fornece">
+            Fornece marmita por fora<br>
+            <hr>
+            <input type="checkbox" name="pref" value="homem">
+            Homem<br>
+            <input type="checkbox" name="pref" value="mulher">
+            Mulher<br>
+            <input type="checkbox" name="pref" value="prefironaoopinar">
+            Prefiro não opinar<br>
+            <input type="checkbox" name="pref" value="saia">
+            Vestiu saia,não é padre, nem escocês É DENTRO<br>
+            <hr>
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado">
+                <option value="">Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="EP">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+            </select>
+            <hr>
+            <fieldset>
+                <label for="mensagem">Mensage:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" cols="4" style="resize: none;"></textarea>
+            </fieldset>
+            <hr>
+
+            <fieldset>
+                <legend>Outros tipos de input</legend>
+
+                <label for="cor">Escolha uma cor</label>
+                <input type="color" id="cor" name="cor">
+
+                <label for="arquivo">Escolha uma cor</label>
+                <input type="file" id="arquivo" name="arquivo">
+
+                <label for="nivel">Nível de Satisfação (0 a 10):</label>
+                <input type="range" id="nivel" name="nivel" min="0" max="10">
+            </fieldset>
+
+            <hr>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            <button type="button">Botão Comum</button>
+
+
+
+
+
+        </form>
+
+    </div>
+</body>
+
+</html>

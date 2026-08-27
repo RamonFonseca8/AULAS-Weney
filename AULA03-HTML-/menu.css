@@ -1,0 +1,19 @@
+.menu {
+    list-style: nome;
+    paddingg: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.menu li a {
+    disaplay: block;
+    backgroud-colr: #333;
+    color:white;
+    text-decoration: no,e;
+    border-radius; 5px;
+}
+
+.menu li a:hover {
+    background-color: #555;
+}
