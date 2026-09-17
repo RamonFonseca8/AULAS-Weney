@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Par ou Impar</title>
+</head>
+<body>
+    <form method="POST">
+        <label>Digite um número:</label><br>
+        <input type="number" name="num" /><br>
+        <input type="submit" value="Enviar" /><br>
+    </form>
+    <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST"){
+            $num = $_POST["num"];
+            if ($num % 2 == 0){
+                echo "$num é par!";
+            }else{
+                echo "$num é impar!";
+            }
+        }
+    ?>
+    </body>
+</html>
