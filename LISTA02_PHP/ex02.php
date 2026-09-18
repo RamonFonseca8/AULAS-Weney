@@ -9,25 +9,31 @@
 <body>
 <form method="POST">
         <label>Digite o primeiro número:</label><br>
-        <input type="number" name="num1" /><br>
+        <input type="number" name="num1" required/><br>
         <label>Digite o segundo número:</label><br>
-        <input type="number" name="num2" /><br>
-        <input type="submit" value="Enviar" /><br>
-    </form>
-    <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST"){
+        <input type="number" name="num2" required/><br>
+        <label>Digite o terceiro número:</label><br>
+        <input type="number" name="num3" required/><br>
+        <label>Digite o quarto número:</label><br>
+        <input type="number" name="num4" required/><br>
+        <label>Digite o quinto número:</label><br>
+        <input type="number" name="num5" required/><br>
+        <input type="submit" value="Calcular"><br>
+     </form> 
+  <?php
+     if ($_SERVER["REQUEST_METHOD"] == "POST"){
         $num1 = $_POST["num1"];
         $num2 = $_POST["num2"];
-        if ($num1 == $num2){
-            echo "$num1 é igual a $num2 <br>";
-        }
-        else{
-            if ($num1 < $num2){
-                echo "$num1 é menor do que $num2 <br>";
-            }
-            else{
-                echo "$num1 é maior do que $num2 <br>";
-            }
+        $num3 = $_POST["num3"];
+        $num4 = $_POST["num4"];
+        $num5 = $_POST["num5"];
+        $media = ($num1 + $num2 + $num3 + $num4 + $num5) / 5;
+        if ($media >= 5){
+            echo "Aluno Aprovado<br>";
+        }else{
+            
+            echo "Aluno Reprovado<br>";
+           
         }
     }
     ?>
