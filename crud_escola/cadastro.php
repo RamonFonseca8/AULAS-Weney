@@ -1,6 +1,5 @@
 <?php
 require "conexao.php";
-// Função para proteger textos exibidos no HTML
 function e($valor) {
     return htmlspecialchars((string)$valor, ENT_QUOTES, "UTF-8");
 }
